@@ -47,7 +47,7 @@ function WebGLUtils( gl, extensions, capabilities ) {
 
 		if ( p === RGBFormat ) {
 
-			console.warn( 'THREE.WebGLRenderer: THREE.RGBFormat has been removed. Use THREE.RGBAFormat instead. https://github.com/mrdoob/three.js/pull/23228' );
+			console.warn( 'WebGLRenderer: RGBFormat has been removed. Use RGBAFormat instead.' );
 			return gl.RGBA;
 
 		}

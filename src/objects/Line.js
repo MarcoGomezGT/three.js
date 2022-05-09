@@ -66,13 +66,13 @@ class Line extends Object3D {
 
 			} else {
 
-				console.warn( 'THREE.Line.computeLineDistances(): Computation only possible with non-indexed BufferGeometry.' );
+				console.warn( 'Line.computeLineDistances(): Computation only possible with non-indexed BufferGeometry.' );
 
 			}
 
 		} else if ( geometry.isGeometry ) {
 
-			console.error( 'THREE.Line.computeLineDistances() no longer supports THREE.Geometry. Use THREE.BufferGeometry instead.' );
+			console.error( 'Line.computeLineDistances() no longer supports Geometry. Use BufferGeometry instead.' );
 
 		}
 
@@ -194,7 +194,7 @@ class Line extends Object3D {
 
 		} else if ( geometry.isGeometry ) {
 
-			console.error( 'THREE.Line.raycast() no longer supports THREE.Geometry. Use THREE.BufferGeometry instead.' );
+			console.error( 'Line.raycast() no longer supports Geometry. Use BufferGeometry instead.' );
 
 		}
 
@@ -237,7 +237,7 @@ class Line extends Object3D {
 
 			if ( morphTargets !== undefined && morphTargets.length > 0 ) {
 
-				console.error( 'THREE.Line.updateMorphTargets() does not support THREE.Geometry. Use THREE.BufferGeometry instead.' );
+				console.error( 'Line.updateMorphTargets() does not support Geometry. Use BufferGeometry instead.' );
 
 			}
 

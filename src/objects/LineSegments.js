@@ -42,13 +42,13 @@ class LineSegments extends Line {
 
 			} else {
 
-				console.warn( 'THREE.LineSegments.computeLineDistances(): Computation only possible with non-indexed BufferGeometry.' );
+				console.warn( 'LineSegments.computeLineDistances(): Computation only possible with non-indexed BufferGeometry.' );
 
 			}
 
 		} else if ( geometry.isGeometry ) {
 
-			console.error( 'THREE.LineSegments.computeLineDistances() no longer supports THREE.Geometry. Use THREE.BufferGeometry instead.' );
+			console.error( 'LineSegments.computeLineDistances() no longer supports Geometry. Use BufferGeometry instead.' );
 
 		}
 

@@ -106,7 +106,7 @@ class SkinnedMesh extends Mesh {
 
 		} else {
 
-			console.warn( 'THREE.SkinnedMesh: Unrecognized bindMode: ' + this.bindMode );
+			console.warn( 'SkinnedMesh: Unrecognized bindMode: ' + this.bindMode );
 
 		}
 

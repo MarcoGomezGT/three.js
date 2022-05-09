@@ -107,7 +107,7 @@ class Mesh extends Object3D {
 
 			if ( morphTargets !== undefined && morphTargets.length > 0 ) {
 
-				console.error( 'THREE.Mesh.updateMorphTargets() no longer supports THREE.Geometry. Use THREE.BufferGeometry instead.' );
+				console.error( 'Mesh.updateMorphTargets() no longer supports Geometry. Use BufferGeometry instead.' );
 
 			}
 
@@ -278,7 +278,7 @@ class Mesh extends Object3D {
 
 		} else if ( geometry.isGeometry ) {
 
-			console.error( 'THREE.Mesh.raycast() no longer supports THREE.Geometry. Use THREE.BufferGeometry instead.' );
+			console.error( 'Mesh.raycast() no longer supports Geometry. Use BufferGeometry instead.' );
 
 		}
 

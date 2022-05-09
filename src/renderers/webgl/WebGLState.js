@@ -649,7 +649,7 @@ function WebGLState( gl, extensions, capabilities ) {
 							break;
 
 						default:
-							console.error( 'THREE.WebGLState: Invalid blending: ', blending );
+							console.error( 'WebGLState: Invalid blending: ', blending );
 							break;
 
 					}
@@ -675,7 +675,7 @@ function WebGLState( gl, extensions, capabilities ) {
 							break;
 
 						default:
-							console.error( 'THREE.WebGLState: Invalid blending: ', blending );
+							console.error( 'WebGLState: Invalid blending: ', blending );
 							break;
 
 					}
@@ -936,7 +936,7 @@ function WebGLState( gl, extensions, capabilities ) {
 
 		} catch ( error ) {
 
-			console.error( 'THREE.WebGLState:', error );
+			console.error( 'WebGLState:', error );
 
 		}
 
@@ -950,7 +950,7 @@ function WebGLState( gl, extensions, capabilities ) {
 
 		} catch ( error ) {
 
-			console.error( 'THREE.WebGLState:', error );
+			console.error( 'WebGLState:', error );
 
 		}
 
@@ -964,7 +964,7 @@ function WebGLState( gl, extensions, capabilities ) {
 
 		} catch ( error ) {
 
-			console.error( 'THREE.WebGLState:', error );
+			console.error( 'WebGLState:', error );
 
 		}
 
@@ -978,7 +978,7 @@ function WebGLState( gl, extensions, capabilities ) {
 
 		} catch ( error ) {
 
-			console.error( 'THREE.WebGLState:', error );
+			console.error( 'WebGLState:', error );
 
 		}
 
@@ -992,7 +992,7 @@ function WebGLState( gl, extensions, capabilities ) {
 
 		} catch ( error ) {
 
-			console.error( 'THREE.WebGLState:', error );
+			console.error( 'WebGLState:', error );
 
 		}
 
@@ -1006,7 +1006,7 @@ function WebGLState( gl, extensions, capabilities ) {
 
 		} catch ( error ) {
 
-			console.error( 'THREE.WebGLState:', error );
+			console.error( 'WebGLState:', error );
 
 		}
 
@@ -1020,7 +1020,7 @@ function WebGLState( gl, extensions, capabilities ) {
 
 		} catch ( error ) {
 
-			console.error( 'THREE.WebGLState:', error );
+			console.error( 'WebGLState:', error );
 
 		}
 
@@ -1034,7 +1034,7 @@ function WebGLState( gl, extensions, capabilities ) {
 
 		} catch ( error ) {
 
-			console.error( 'THREE.WebGLState:', error );
+			console.error( 'WebGLState:', error );
 
 		}
 

@@ -399,7 +399,7 @@ function WebGLLights( extensions, capabilities ) {
 
 				} else {
 
-					console.error( 'THREE.WebGLRenderer: Unable to use RectAreaLight. Missing WebGL extensions.' );
+					console.error( 'WebGLRenderer: Unable to use RectAreaLight. Missing WebGL extensions.' );
 
 				}
 

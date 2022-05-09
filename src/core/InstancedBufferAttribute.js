@@ -10,7 +10,7 @@ class InstancedBufferAttribute extends BufferAttribute {
 
 			normalized = false;
 
-			console.error( 'THREE.InstancedBufferAttribute: The constructor now expects normalized as the third argument.' );
+			console.error( 'InstancedBufferAttribute: The constructor now expects normalized as the third argument.' );
 
 		}
 

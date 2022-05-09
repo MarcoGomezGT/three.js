@@ -32,7 +32,7 @@ function getEncodingComponents( encoding ) {
 		case sRGBEncoding:
 			return [ 'sRGB', '( value )' ];
 		default:
-			console.warn( 'THREE.WebGLProgram: Unsupported encoding:', encoding );
+			console.warn( 'WebGLProgram: Unsupported encoding:', encoding );
 			return [ 'Linear', '( value )' ];
 
 	}
@@ -97,7 +97,7 @@ function getToneMappingFunction( functionName, toneMapping ) {
 			break;
 
 		default:
-			console.warn( 'THREE.WebGLProgram: Unsupported toneMapping:', toneMapping );
+			console.warn( 'WebGLProgram: Unsupported toneMapping:', toneMapping );
 			toneMappingName = 'Linear';
 
 	}
@@ -153,7 +153,7 @@ function fetchAttributeLocations( gl, program ) {
 		if ( info.type === gl.FLOAT_MAT3 ) locationSize = 3;
 		if ( info.type === gl.FLOAT_MAT4 ) locationSize = 4;
 
-		// console.log( 'THREE.WebGLProgram: ACTIVE VERTEX ATTRIBUTE:', name, i );
+		// console.log( 'WebGLProgram: ACTIVE VERTEX ATTRIBUTE:', name, i );
 
 		attributes[ name ] = {
 			type: info.type,
@@ -393,7 +393,7 @@ function generateCubeUVSize( parameters ) {
 
 function WebGLProgram( renderer, cacheKey, parameters, bindingStates ) {
 
-	// TODO Send this event to Three.js DevTools
+	// TODO Send this event to DevTools
 	// console.log( 'WebGLProgram', cacheKey );
 
 	const gl = renderer.getContext();
@@ -784,7 +784,7 @@ function WebGLProgram( renderer, cacheKey, parameters, bindingStates ) {
 			const fragmentErrors = getShaderErrors( gl, glFragmentShader, 'fragment' );
 
 			console.error(
-				'THREE.WebGLProgram: Shader Error ' + gl.getError() + ' - ' +
+				'WebGLProgram: Shader Error ' + gl.getError() + ' - ' +
 				'VALIDATE_STATUS ' + gl.getProgramParameter( program, gl.VALIDATE_STATUS ) + '\n\n' +
 				'Program Info Log: ' + programLog + '\n' +
 				vertexErrors + '\n' +
@@ -793,7 +793,7 @@ function WebGLProgram( renderer, cacheKey, parameters, bindingStates ) {
 
 		} else if ( programLog !== '' ) {
 
-			console.warn( 'THREE.WebGLProgram: Program Info Log:', programLog );
+			console.warn( 'WebGLProgram: Program Info Log:', programLog );
 
 		} else if ( vertexLog === '' || fragmentLog === '' ) {
 

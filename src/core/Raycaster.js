@@ -47,7 +47,7 @@ class Raycaster {
 
 		} else {
 
-			console.error( 'THREE.Raycaster: Unsupported camera type: ' + camera.type );
+			console.error( 'Raycaster: Unsupported camera type: ' + camera.type );
 
 		}
 

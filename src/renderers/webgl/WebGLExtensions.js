@@ -80,7 +80,7 @@ function WebGLExtensions( gl ) {
 
 			if ( extension === null ) {
 
-				console.warn( 'THREE.WebGLRenderer: ' + name + ' extension not supported.' );
+				console.warn( 'WebGLRenderer: ' + name + ' extension not supported.' );
 
 			}
 

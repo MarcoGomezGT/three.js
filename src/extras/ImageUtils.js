@@ -50,7 +50,7 @@ class ImageUtils {
 
 		if ( canvas.width > 2048 || canvas.height > 2048 ) {
 
-			console.warn( 'THREE.ImageUtils.getDataURL: Image converted to jpg for performance reasons', image );
+			console.warn( 'ImageUtils.getDataURL: Image converted to jpg for performance reasons', image );
 
 			return canvas.toDataURL( 'image/jpeg', 0.6 );
 
@@ -117,7 +117,7 @@ class ImageUtils {
 
 		} else {
 
-			console.warn( 'THREE.ImageUtils.sRGBToLinear(): Unsupported image type. No color space conversion applied.' );
+			console.warn( 'ImageUtils.sRGBToLinear(): Unsupported image type. No color space conversion applied.' );
 			return image;
 
 		}

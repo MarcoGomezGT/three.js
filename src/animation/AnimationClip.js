@@ -191,7 +191,7 @@ class AnimationClip {
 
 		if ( ! animation ) {
 
-			console.error( 'THREE.AnimationClip: No animation in JSONLoader data.' );
+			console.error( 'AnimationClip: No animation in JSONLoader data.' );
 			return null;
 
 		}
@@ -431,7 +431,7 @@ function getTrackTypeForValueTypeName( typeName ) {
 
 	}
 
-	throw new Error( 'THREE.KeyframeTrack: Unsupported typeName: ' + typeName );
+	throw new Error( 'KeyframeTrack: Unsupported typeName: ' + typeName );
 
 }
 
@@ -439,7 +439,7 @@ function parseKeyframeTrack( json ) {
 
 	if ( json.type === undefined ) {
 
-		throw new Error( 'THREE.KeyframeTrack: track type undefined, can not parse' );
+		throw new Error( 'KeyframeTrack: track type undefined, can not parse' );
 
 	}
 

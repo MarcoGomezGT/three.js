@@ -32,7 +32,7 @@ function WebGLAttributes( gl, capabilities ) {
 
 				} else {
 
-					throw new Error( 'THREE.WebGLAttributes: Usage of Float16BufferAttribute requires WebGL2.' );
+					throw new Error( 'WebGLAttributes: Usage of Float16BufferAttribute requires WebGL2.' );
 
 				}
 
@@ -68,7 +68,7 @@ function WebGLAttributes( gl, capabilities ) {
 
 		} else {
 
-			throw new Error( 'THREE.WebGLAttributes: Unsupported buffer data format: ' + array );
+			throw new Error( 'WebGLAttributes: Unsupported buffer data format: ' + array );
 
 		}
 

@@ -167,7 +167,7 @@ function setValueV1f( gl, v ) {
 
 }
 
-// Single float vector (from flat array or THREE.VectorN)
+// Single float vector (from flat array or VectorN)
 
 function setValueV2f( gl, v ) {
 
@@ -265,7 +265,7 @@ function setValueV4f( gl, v ) {
 
 }
 
-// Single matrix (from flat array or THREE.MatrixN)
+// Single matrix (from flat array or MatrixN)
 
 function setValueM2( gl, v ) {
 
@@ -581,7 +581,7 @@ function setValueV1fArray( gl, v ) {
 
 }
 
-// Array of vectors (from flat array or array of THREE.VectorN)
+// Array of vectors (from flat array or array of VectorN)
 
 function setValueV2fArray( gl, v ) {
 
@@ -607,7 +607,7 @@ function setValueV4fArray( gl, v ) {
 
 }
 
-// Array of matrices (from flat array or array of THREE.MatrixN)
+// Array of matrices (from flat array or array of MatrixN)
 
 function setValueM2Array( gl, v ) {
 

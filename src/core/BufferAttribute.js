@@ -13,7 +13,7 @@ class BufferAttribute {
 
 		if ( Array.isArray( array ) ) {
 
-			throw new TypeError( 'THREE.BufferAttribute: array should be a Typed Array.' );
+			throw new TypeError( 'BufferAttribute: array should be a Typed Array.' );
 
 		}
 
@@ -95,7 +95,7 @@ class BufferAttribute {
 
 			if ( color === undefined ) {
 
-				console.warn( 'THREE.BufferAttribute.copyColorsArray(): color is undefined', i );
+				console.warn( 'BufferAttribute.copyColorsArray(): color is undefined', i );
 				color = new Color();
 
 			}
@@ -121,7 +121,7 @@ class BufferAttribute {
 
 			if ( vector === undefined ) {
 
-				console.warn( 'THREE.BufferAttribute.copyVector2sArray(): vector is undefined', i );
+				console.warn( 'BufferAttribute.copyVector2sArray(): vector is undefined', i );
 				vector = new Vector2();
 
 			}
@@ -146,7 +146,7 @@ class BufferAttribute {
 
 			if ( vector === undefined ) {
 
-				console.warn( 'THREE.BufferAttribute.copyVector3sArray(): vector is undefined', i );
+				console.warn( 'BufferAttribute.copyVector3sArray(): vector is undefined', i );
 				vector = new Vector3();
 
 			}
@@ -172,7 +172,7 @@ class BufferAttribute {
 
 			if ( vector === undefined ) {
 
-				console.warn( 'THREE.BufferAttribute.copyVector4sArray(): vector is undefined', i );
+				console.warn( 'BufferAttribute.copyVector4sArray(): vector is undefined', i );
 				vector = new Vector4();
 
 			}

@@ -96,7 +96,7 @@ function WebGLShadowMap( _renderer, _objects, _capabilities ) {
 
 			if ( shadow === undefined ) {
 
-				console.warn( 'THREE.WebGLShadowMap:', light, 'has no shadow.' );
+				console.warn( 'WebGLShadowMap:', light, 'has no shadow.' );
 				continue;
 
 			}

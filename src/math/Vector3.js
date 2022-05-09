@@ -105,7 +105,7 @@ class Vector3 {
 
 		if ( w !== undefined ) {
 
-			console.warn( 'THREE.Vector3: .add() now only accepts one argument. Use .addVectors( a, b ) instead.' );
+			console.warn( 'Vector3: .add() now only accepts one argument. Use .addVectors( a, b ) instead.' );
 			return this.addVectors( v, w );
 
 		}
@@ -152,7 +152,7 @@ class Vector3 {
 
 		if ( w !== undefined ) {
 
-			console.warn( 'THREE.Vector3: .sub() now only accepts one argument. Use .subVectors( a, b ) instead.' );
+			console.warn( 'Vector3: .sub() now only accepts one argument. Use .subVectors( a, b ) instead.' );
 			return this.subVectors( v, w );
 
 		}
@@ -189,7 +189,7 @@ class Vector3 {
 
 		if ( w !== undefined ) {
 
-			console.warn( 'THREE.Vector3: .multiply() now only accepts one argument. Use .multiplyVectors( a, b ) instead.' );
+			console.warn( 'Vector3: .multiply() now only accepts one argument. Use .multiplyVectors( a, b ) instead.' );
 			return this.multiplyVectors( v, w );
 
 		}
@@ -226,7 +226,7 @@ class Vector3 {
 
 		if ( ! ( euler && euler.isEuler ) ) {
 
-			console.error( 'THREE.Vector3: .applyEuler() now expects an Euler rotation rather than a Vector3 and order.' );
+			console.error( 'Vector3: .applyEuler() now expects an Euler rotation rather than a Vector3 and order.' );
 
 		}
 
@@ -310,7 +310,7 @@ class Vector3 {
 
 	transformDirection( m ) {
 
-		// input: THREE.Matrix4 affine matrix
+		// input: Matrix4 affine matrix
 		// vector interpreted as a direction
 
 		const x = this.x, y = this.y, z = this.z;
@@ -502,7 +502,7 @@ class Vector3 {
 
 		if ( w !== undefined ) {
 
-			console.warn( 'THREE.Vector3: .cross() now only accepts one argument. Use .crossVectors( a, b ) instead.' );
+			console.warn( 'Vector3: .cross() now only accepts one argument. Use .crossVectors( a, b ) instead.' );
 			return this.crossVectors( v, w );
 
 		}
@@ -699,7 +699,7 @@ class Vector3 {
 
 		if ( offset !== undefined ) {
 
-			console.warn( 'THREE.Vector3: offset has been removed from .fromBufferAttribute().' );
+			console.warn( 'Vector3: offset has been removed from .fromBufferAttribute().' );
 
 		}
 

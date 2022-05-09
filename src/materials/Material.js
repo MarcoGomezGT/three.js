@@ -115,7 +115,7 @@ class Material extends EventDispatcher {
 
 			if ( newValue === undefined ) {
 
-				console.warn( 'THREE.Material: \'' + key + '\' parameter is undefined.' );
+				console.warn( 'Material: \'' + key + '\' parameter is undefined.' );
 				continue;
 
 			}
@@ -123,7 +123,7 @@ class Material extends EventDispatcher {
 			// for backward compatibility if shading is set in the constructor
 			if ( key === 'shading' ) {
 
-				console.warn( 'THREE.' + this.type + ': .shading has been removed. Use the boolean .flatShading instead.' );
+				console.warn( '' + this.type + ': .shading has been removed. Use the boolean .flatShading instead.' );
 				this.flatShading = ( newValue === FlatShading ) ? true : false;
 				continue;
 
@@ -133,7 +133,7 @@ class Material extends EventDispatcher {
 
 			if ( currentValue === undefined ) {
 
-				console.warn( 'THREE.' + this.type + ': \'' + key + '\' is not a property of this material.' );
+				console.warn( '' + this.type + ': \'' + key + '\' is not a property of this material.' );
 				continue;
 
 			}

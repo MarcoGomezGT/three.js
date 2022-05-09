@@ -59,7 +59,7 @@ class MaterialLoader extends Loader {
 
 			if ( textures[ name ] === undefined ) {
 
-				console.warn( 'THREE.MaterialLoader: Undefined texture', name );
+				console.warn( 'MaterialLoader: Undefined texture', name );
 
 			}
 
@@ -216,7 +216,7 @@ class MaterialLoader extends Loader {
 
 		// Deprecated
 
-		if ( json.shading !== undefined ) material.flatShading = json.shading === 1; // THREE.FlatShading
+		if ( json.shading !== undefined ) material.flatShading = json.shading === 1; // FlatShading
 
 		// for PointsMaterial
 

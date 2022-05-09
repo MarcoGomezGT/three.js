@@ -271,7 +271,7 @@ function WebGLRenderer( parameters = {} ) {
 
 	} catch ( error ) {
 
-		console.error( 'THREE.WebGLRenderer: ' + error.message );
+		console.error( 'WebGLRenderer: ' + error.message );
 		throw error;
 
 	}
@@ -391,7 +391,7 @@ function WebGLRenderer( parameters = {} ) {
 
 		if ( xr.isPresenting ) {
 
-			console.warn( 'THREE.WebGLRenderer: Can\'t change size while VR device is presenting.' );
+			console.warn( 'WebGLRenderer: Can\'t change size while VR device is presenting.' );
 			return;
 
 		}
@@ -601,7 +601,7 @@ function WebGLRenderer( parameters = {} ) {
 
 		event.preventDefault();
 
-		console.log( 'THREE.WebGLRenderer: Context Lost.' );
+		console.log( 'WebGLRenderer: Context Lost.' );
 
 		_isContextLost = true;
 
@@ -609,7 +609,7 @@ function WebGLRenderer( parameters = {} ) {
 
 	function onContextRestore( /* event */ ) {
 
-		console.log( 'THREE.WebGLRenderer: Context Restored.' );
+		console.log( 'WebGLRenderer: Context Restored.' );
 
 		_isContextLost = false;
 
@@ -911,7 +911,7 @@ function WebGLRenderer( parameters = {} ) {
 
 		if ( camera !== undefined && camera.isCamera !== true ) {
 
-			console.error( 'THREE.WebGLRenderer.render: camera is not an instance of THREE.Camera.' );
+			console.error( 'WebGLRenderer.render: camera is not an instance of Camera.' );
 			return;
 
 		}
@@ -1675,7 +1675,7 @@ function WebGLRenderer( parameters = {} ) {
 
 				} else {
 
-					console.warn( 'THREE.WebGLRenderer: SkinnedMesh can only be used with WebGL 2. With WebGL 1 OES_texture_float and vertex textures support is required.' );
+					console.warn( 'WebGLRenderer: SkinnedMesh can only be used with WebGL 2. With WebGL 1 OES_texture_float and vertex textures support is required.' );
 
 				}
 
@@ -1817,7 +1817,7 @@ function WebGLRenderer( parameters = {} ) {
 				// are midframe flushes and an external depth buffer. Disable use of the extension.
 				if ( extensions.has( 'WEBGL_multisampled_render_to_texture' ) === true ) {
 
-					console.warn( 'THREE.WebGLRenderer: Render-to-texture extension was disabled because an external texture was provided' );
+					console.warn( 'WebGLRenderer: Render-to-texture extension was disabled because an external texture was provided' );
 					renderTargetProperties.__useRenderToTexture = false;
 
 				}
@@ -1943,7 +1943,7 @@ function WebGLRenderer( parameters = {} ) {
 
 		if ( ! ( renderTarget && renderTarget.isWebGLRenderTarget ) ) {
 
-			console.error( 'THREE.WebGLRenderer.readRenderTargetPixels: renderTarget is not THREE.WebGLRenderTarget.' );
+			console.error( 'WebGLRenderer.readRenderTargetPixels: renderTarget is not WebGLRenderTarget.' );
 			return;
 
 		}
@@ -1968,7 +1968,7 @@ function WebGLRenderer( parameters = {} ) {
 
 				if ( textureFormat !== RGBAFormat && utils.convert( textureFormat ) !== _gl.getParameter( _gl.IMPLEMENTATION_COLOR_READ_FORMAT ) ) {
 
-					console.error( 'THREE.WebGLRenderer.readRenderTargetPixels: renderTarget is not in RGBA or implementation defined format.' );
+					console.error( 'WebGLRenderer.readRenderTargetPixels: renderTarget is not in RGBA or implementation defined format.' );
 					return;
 
 				}
@@ -1979,7 +1979,7 @@ function WebGLRenderer( parameters = {} ) {
 					! ( textureType === FloatType && ( capabilities.isWebGL2 || extensions.has( 'OES_texture_float' ) || extensions.has( 'WEBGL_color_buffer_float' ) ) ) && // Chrome Mac >= 52 and Firefox
 					! halfFloatSupportedByExt ) {
 
-					console.error( 'THREE.WebGLRenderer.readRenderTargetPixels: renderTarget is not in UnsignedByteType or implementation defined type.' );
+					console.error( 'WebGLRenderer.readRenderTargetPixels: renderTarget is not in UnsignedByteType or implementation defined type.' );
 					return;
 
 				}
@@ -2063,7 +2063,7 @@ function WebGLRenderer( parameters = {} ) {
 
 		if ( _this.isWebGL1Renderer ) {
 
-			console.warn( 'THREE.WebGLRenderer.copyTextureToTexture3D: can only be used with WebGL2.' );
+			console.warn( 'WebGLRenderer.copyTextureToTexture3D: can only be used with WebGL2.' );
 			return;
 
 		}
@@ -2087,7 +2087,7 @@ function WebGLRenderer( parameters = {} ) {
 
 		} else {
 
-			console.warn( 'THREE.WebGLRenderer.copyTextureToTexture3D: only supports THREE.DataTexture3D and THREE.DataTexture2DArray.' );
+			console.warn( 'WebGLRenderer.copyTextureToTexture3D: only supports DataTexture3D and DataTexture2DArray.' );
 			return;
 
 		}
@@ -2118,7 +2118,7 @@ function WebGLRenderer( parameters = {} ) {
 
 			if ( srcTexture.isCompressedTexture ) {
 
-				console.warn( 'THREE.WebGLRenderer.copyTextureToTexture3D: untested support for compressed srcTexture.' );
+				console.warn( 'WebGLRenderer.copyTextureToTexture3D: untested support for compressed srcTexture.' );
 				_gl.compressedTexSubImage3D( glTarget, level, position.x, position.y, position.z, width, height, depth, glFormat, image.data );
 
 			} else {
@@ -2161,11 +2161,11 @@ function WebGLRenderer( parameters = {} ) {
 
 	};
 
-	if ( typeof __THREE_DEVTOOLS__ !== 'undefined' ) {
+	// if ( typeof __THREE_DEVTOOLS__ !== 'undefined' ) {
 
-		__THREE_DEVTOOLS__.dispatchEvent( new CustomEvent( 'observe', { detail: this } ) );
+	// 	__THREE_DEVTOOLS__.dispatchEvent( new CustomEvent( 'observe', { detail: this } ) );
 
-	}
+	// }
 
 }
 

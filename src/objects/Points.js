@@ -100,7 +100,7 @@ class Points extends Object3D {
 
 		} else {
 
-			console.error( 'THREE.Points.raycast() no longer supports THREE.Geometry. Use THREE.BufferGeometry instead.' );
+			console.error( 'Points.raycast() no longer supports Geometry. Use BufferGeometry instead.' );
 
 		}
 
@@ -143,7 +143,7 @@ class Points extends Object3D {
 
 			if ( morphTargets !== undefined && morphTargets.length > 0 ) {
 
-				console.error( 'THREE.Points.updateMorphTargets() does not support THREE.Geometry. Use THREE.BufferGeometry instead.' );
+				console.error( 'Points.updateMorphTargets() does not support Geometry. Use BufferGeometry instead.' );
 
 			}
 

@@ -80,8 +80,8 @@ class CurvePath extends Curve {
 
 	}
 
-	// We cannot use the default THREE.Curve getPoint() with getLength() because in
-	// THREE.Curve, getLength() depends on getPoint() but in THREE.CurvePath
+	// We cannot use the default Curve getPoint() with getLength() because in
+	// Curve, getLength() depends on getPoint() but in CurvePath
 	// getPoint() depends on getLength
 
 	getLength() {

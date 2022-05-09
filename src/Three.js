@@ -154,26 +154,26 @@ export { ShapeUtils } from './extras/ShapeUtils.js';
 export { PMREMGenerator } from './extras/PMREMGenerator.js';
 export { WebGLUtils } from './renderers/webgl/WebGLUtils.js';
 export * from './constants.js';
-export * from './Three.Legacy.js';
+// export * from './Three.Legacy.js';
 
-if ( typeof __THREE_DEVTOOLS__ !== 'undefined' ) {
+// if ( typeof __THREE_DEVTOOLS__ !== 'undefined' ) {
 
-	__THREE_DEVTOOLS__.dispatchEvent( new CustomEvent( 'register', { detail: {
-		revision: REVISION,
-	} } ) );
+// 	__THREE_DEVTOOLS__.dispatchEvent( new CustomEvent( 'register', { detail: {
+// 		revision: REVISION,
+// 	} } ) );
 
-}
+// }
 
-if ( typeof window !== 'undefined' ) {
+// if ( typeof window !== 'undefined' ) {
 
-	if ( window.__THREE__ ) {
+// 	if ( window.__THREE__ ) {
 
-		console.warn( 'WARNING: Multiple instances of Three.js being imported.' );
+// 		console.warn( 'WARNING: Multiple instances of Three.js being imported.' );
 
-	} else {
+// 	} else {
 
-		window.__THREE__ = REVISION;
+// 		window.__THREE__ = REVISION;
 
-	}
+// 	}
 
-}
+// }

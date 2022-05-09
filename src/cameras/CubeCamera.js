@@ -15,7 +15,7 @@ class CubeCamera extends Object3D {
 
 		if ( renderTarget.isWebGLCubeRenderTarget !== true ) {
 
-			console.error( 'THREE.CubeCamera: The constructor now expects an instance of WebGLCubeRenderTarget as third parameter.' );
+			console.error( 'CubeCamera: The constructor now expects an instance of WebGLCubeRenderTarget as third parameter.' );
 			return;
 
 		}

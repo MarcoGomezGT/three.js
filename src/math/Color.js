@@ -58,7 +58,7 @@ class Color {
 
 		if ( g === undefined && b === undefined ) {
 
-			// r is THREE.Color, hex or string
+			// r is Color, hex or string
 			return this.set( r );
 
 		}
@@ -159,7 +159,7 @@ class Color {
 
 			if ( parseFloat( string ) < 1 ) {
 
-				console.warn( 'THREE.Color: Alpha component of ' + style + ' will be ignored.' );
+				console.warn( 'Color: Alpha component of ' + style + ' will be ignored.' );
 
 			}
 
@@ -289,7 +289,7 @@ class Color {
 		} else {
 
 			// unknown color
-			console.warn( 'THREE.Color: Unknown color ' + style );
+			console.warn( 'Color: Unknown color ' + style );
 
 		}
 

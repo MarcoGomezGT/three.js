@@ -117,7 +117,7 @@ const AnimationUtils = {
 
 		} else if ( value.toArray !== undefined ) {
 
-			// ...assume THREE.Math-ish
+			// ...assume Math-ish
 
 			do {
 

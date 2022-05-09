@@ -101,7 +101,7 @@ class ObjectLoader extends Loader {
 
 			if ( metadata === undefined || metadata.type === undefined || metadata.type.toLowerCase() === 'geometry' ) {
 
-				console.error( 'THREE.ObjectLoader: Can\'t load ' + url );
+				console.error( 'ObjectLoader: Can\'t load ' + url );
 				return;
 
 			}
@@ -132,7 +132,7 @@ class ObjectLoader extends Loader {
 
 		if ( metadata === undefined || metadata.type === undefined || metadata.type.toLowerCase() === 'geometry' ) {
 
-			throw new Error( 'THREE.ObjectLoader: Can\'t load ' + url );
+			throw new Error( 'ObjectLoader: Can\'t load ' + url );
 
 		}
 
@@ -280,7 +280,7 @@ class ObjectLoader extends Loader {
 
 					case 'Geometry':
 
-						console.error( 'THREE.ObjectLoader: The legacy Geometry type is no longer supported.' );
+						console.error( 'ObjectLoader: The legacy Geometry type is no longer supported.' );
 
 						break;
 
@@ -292,7 +292,7 @@ class ObjectLoader extends Loader {
 
 						} else {
 
-							console.warn( `THREE.ObjectLoader: Unsupported geometry type "${ data.type }"` );
+							console.warn( `ObjectLoader: Unsupported geometry type "${ data.type }"` );
 
 						}
 
@@ -609,7 +609,7 @@ class ObjectLoader extends Loader {
 
 			if ( typeof value === 'number' ) return value;
 
-			console.warn( 'THREE.ObjectLoader.parseTexture: Constant should be in numeric form.', value );
+			console.warn( 'ObjectLoader.parseTexture: Constant should be in numeric form.', value );
 
 			return type[ value ];
 
@@ -625,13 +625,13 @@ class ObjectLoader extends Loader {
 
 				if ( data.image === undefined ) {
 
-					console.warn( 'THREE.ObjectLoader: No "image" specified for', data.uuid );
+					console.warn( 'ObjectLoader: No "image" specified for', data.uuid );
 
 				}
 
 				if ( images[ data.image ] === undefined ) {
 
-					console.warn( 'THREE.ObjectLoader: Undefined image', data.image );
+					console.warn( 'ObjectLoader: Undefined image', data.image );
 
 				}
 
@@ -715,7 +715,7 @@ class ObjectLoader extends Loader {
 
 			if ( geometries[ name ] === undefined ) {
 
-				console.warn( 'THREE.ObjectLoader: Undefined geometry', name );
+				console.warn( 'ObjectLoader: Undefined geometry', name );
 
 			}
 
@@ -737,7 +737,7 @@ class ObjectLoader extends Loader {
 
 					if ( materials[ uuid ] === undefined ) {
 
-						console.warn( 'THREE.ObjectLoader: Undefined material', uuid );
+						console.warn( 'ObjectLoader: Undefined material', uuid );
 
 					}
 
@@ -751,7 +751,7 @@ class ObjectLoader extends Loader {
 
 			if ( materials[ name ] === undefined ) {
 
-				console.warn( 'THREE.ObjectLoader: Undefined material', name );
+				console.warn( 'ObjectLoader: Undefined material', name );
 
 			}
 
@@ -763,7 +763,7 @@ class ObjectLoader extends Loader {
 
 			if ( textures[ uuid ] === undefined ) {
 
-				console.warn( 'THREE.ObjectLoader: Undefined texture', uuid );
+				console.warn( 'ObjectLoader: Undefined texture', uuid );
 
 			}
 
@@ -1071,7 +1071,7 @@ class ObjectLoader extends Loader {
 
 				if ( skeleton === undefined ) {
 
-					console.warn( 'THREE.ObjectLoader: No skeleton found with UUID:', child.skeleton );
+					console.warn( 'ObjectLoader: No skeleton found with UUID:', child.skeleton );
 
 				} else {
 
@@ -1089,7 +1089,7 @@ class ObjectLoader extends Loader {
 
 	setTexturePath( value ) {
 
-		console.warn( 'THREE.ObjectLoader: .setTexturePath() has been renamed to .setResourcePath().' );
+		console.warn( 'ObjectLoader: .setTexturePath() has been renamed to .setResourcePath().' );
 		return this.setResourcePath( value );
 
 	}

@@ -23,7 +23,7 @@ function denormalize( morph, attribute ) {
 	if ( array instanceof Int8Array ) denominator = 127;
 	else if ( array instanceof Int16Array ) denominator = 32767;
 	else if ( array instanceof Int32Array ) denominator = 2147483647;
-	else console.error( 'THREE.WebGLMorphtargets: Unsupported morph attribute data type: ', array );
+	else console.error( 'WebGLMorphtargets: Unsupported morph attribute data type: ', array );
 
 	morph.divideScalar( denominator );
 

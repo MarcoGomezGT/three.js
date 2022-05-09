@@ -32,7 +32,7 @@ class BoxHelper extends LineSegments {
 
 		if ( object !== undefined ) {
 
-			console.warn( 'THREE.BoxHelper: .update() has no longer arguments.' );
+			console.warn( 'BoxHelper: .update() has no longer arguments.' );
 
 		}
 
